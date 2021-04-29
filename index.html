@@ -1,83 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="app.js">
-    <title>Tui Alailima</title>
-</head>
-<body>
-    <header>
-        <div class="container"> 
-            <h2>tui</h2>
-            <nav class="navbar">
-                <div class="menu-flex">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Tui Alailima</title>
+    </head>
+    <body>
+        <header>
+            <div class="container"> 
+                <h2><span>coach</span> tui</h2>
+                <nav class="nav-grid">
+                    
                     <a href="#about">About</a>
-                    <a href="#">ProjeX</a>
-                    <a href="#">Socials</a>
+                    <a href="#projex">ProjeX</a>
+                    <a href="#socials">Socials</a>
                 </div>
-            </nav>    
-
-
-        </div>
-    </header>
-    <main>
-        <section id="banner">
-            <div class="container">
-                <h1>
-                    The 40 year old  <br class="hide-mob"/>
-                    <span>coding virgin</span> 
-                </h1>
-                <h3>no, im not just a construction worker and a crossfit coach,</h3>
-                <a href="#" class="button">Find out what i'm all about...</a>
+            </nav>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
             </div>
-        </section>
+        </header>
+        <nav class="mobile-nav">
+            <a href="#">About</a>
+            <a href="#">ProjeX</a>
+            <a href="#">Socials</a>
+        </nav>
+        <main>
+            <section class="banner">
+                <div class="container">
+                    <h1>
+                        The 40 year old  <br class="hide-mob"/>
+                        <span>Coding Virgin</span> 
+                    </h1>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>about</h2>
-                <div class="about">
-                    <figure class="img-box">
-                        <img src="https://github.com/coachtui/coachtui/blob/main/fam3.jpeg?raw=true" alt="Micah, Zyrus and Zaniyah" class="img"/>
-                    </figure>
-                    <h3>Family</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sed possimus aliquid quaerat porro harum eius error eligendi aperiam iusto excepturi illum ipsa quos earum eaque quia. Delectus, necessitatibus iure.
-                    </p>
+                    <h3>No, im not just a construction worker and a CrossFit coach,</h3>
+                    <a href="#" class="button">Find out what i'm all about...</a>
                 </div>
-                <div class="about">
-                    <figure class="img-box">
-                        <iframe id="video" width="604" height="340" src="https://www.youtube.com/embed/EucuT3mK4rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </figure>
-                    <h3>Fitness</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sed possimus aliquid quaerat porro harum eius error eligendi aperiam iusto excepturi illum ipsa quos earum eaque quia. Delectus, necessitatibus iure.
-                    </p>
+            </section>
+    
+           <section id="about" class="about">
+                <div class="container">
+                    <h2>About</h2>
+                    
+                    <div class="about-grid">
+
+                        <div class="about">
+                        <figure class="img-box">
+                            <img src="./SCSS/images/fam3 copy.jpeg" alt="Micah, Zyrus and Zaniyah" class="img"/>
+                        </figure>
+                        <div class="content">
+                        <h3>Family</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="about" style="width: 100%; overflow: hidden">
+                        <iframe class="img-box" 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/UaALzQyPGOk" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen="1"></iframe>
+                                <div class="content">
+                        <h3>Fitness</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </p>
+                    </div>
                 </div>
-                <div class="about">
-                    <figure class="img-box">
-                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaCUyMHN0b2NrJTIwbWFya2V0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Micah, Zyrus and Zaniyah" class="img"/>
-                    </figure>
-                    <h3>Fun</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sed possimus aliquid quaerat porro harum eius error eligendi aperiam iusto excepturi illum ipsa quos earum eaque quia. Delectus, necessitatibus iure.
-                    </p>
+
+                    <div class="about">
+                        <figure class="img-box">
+                            <img src="https://images.unsplash.com/photo-1612043273531-601d2cd4855e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80" alt="Tech and stocks" class="img"/>
+                        </figure>
+                        <div class="content">
+                        <h3>Fun</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </p>
+                    </div>
                 </div>
-            </div>  
-        </section>       
-    </main>
-</body>
-<footer>
-    <div class="countup" id="countup1">
-        <h3>Time I've been coding</h3>
-        <span class="timeel days">00</span>
-        <span class="timeel timeRefDays">days</span>
-        <span class="timeel hours">00</span>
-        <span class="timeel timeRefHours">hours</span>
-        <span class="timeel minutes">00</span>
-        <span class="timeel timeRefMinutes">minutes</span>
-    </div> 
-</footer>
-</html>
+                </div>
+                </div>  
+            </section> 
+            
+            <section class="projex" id="projex">
+                <div class="container">
+                    <h2>ProjeX</h2>
+        </main>
+    </body>
+    </html>
+    
